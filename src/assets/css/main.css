@@ -1,0 +1,25 @@
+@import "./custom.css";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* @apply bg-[#171A30];
+  @apply text-[#fff]; */
+  font-family: "DM Sans", serif;
+}
+@layer base {
+  .container {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+}
+
+@layer components {
+  .theme-button {
+    @apply flex items-center justify-center w-10 h-10 rounded-full bg-gray-700 text-gray-100 hover:bg-gray-600 hover:shadow-lg transition duration-300;
+  }
+}

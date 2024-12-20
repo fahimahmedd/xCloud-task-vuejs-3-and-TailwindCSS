@@ -1,14 +1,24 @@
-import './assets/main.css'
+import './assets/css/custom.css';
+import './assets/css/main.css';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
 
-import App from './App.vue'
-import router from './router'
+import App from './App.vue';
+import router from './router';
+import { useThemeStore } from './stores/useTheme';
 
-const app = createApp(App)
+// Import and load theme store
 
-app.use(createPinia())
-app.use(router)
 
-app.mount('#app')
+const app = createApp(App);
+const pinia = createPinia();
+
+app.use(pinia);
+app.use(router);
+
+// Load the theme on app initialization
+const themeStore = useThemeStore(pinia);
+themeStore.loadTheme();
+
+app.mount('#app');
