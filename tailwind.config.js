@@ -9,15 +9,15 @@ export default {
       colors: {
         lightPrimary: '#147AFF', 
         secondaryLight: '#FFBB5A', 
-        darkPrimary: '#FFBB5A', 
+        darkPrimary: '#147AFF', 
         darkSecondary: '#FFBB5A',
         lightBackground: '#ffffff', 
         darkBackground: '#171A30', 
         darkBackgroundSecondary: '#1D2239', 
         borderPrimaryLight: '#147AFF',
         borderSecondaryLight: '#FFBB5A',
-        textPrimaryLight: '#171A30',
-        textSecondaryLight: '#1D2239',
+        lightText: '#171A30',
+        darkText: '#74778e',
       },
       boxShadow: {
         defaultLight: '0 4px 6px rgba(0, 0, 0, 0.1)',
